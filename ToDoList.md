@@ -124,9 +124,9 @@ Medium: 11px
   * Access the location of the school or college. 
 
 
-# 👥 User Roles & Access
+## 👥 User Roles & Access
 
-## 1. Parent/Student Users
+### 1. Parent/Student Users
 * Search and compare schools or colleges.
 * Apply for **loans** and **scholarships**.
 * Interact with the **AI chatbot** for personalized guidance.
@@ -134,7 +134,7 @@ Medium: 11px
 
 ---
 
-## 2. School Admins
+### 2. School Admins
 * Manage and update **school profiles**, including:
   * Academic details
   * Infrastructure
@@ -145,11 +145,12 @@ Medium: 11px
 
 ---
 
-## 3. Super Admin (SchoolDekho Team)
+### 3. Super Admin (SchoolDekho Team)
 * Manage **overall platform listings** and ensure data accuracy.
 * Verify and approve **new school registrations**.
 * Oversee and manage **user accounts** and **admin permissions**.
 * Generate **reports and analytics** for platform insights.
+
 
 
 
