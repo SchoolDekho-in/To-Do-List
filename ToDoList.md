@@ -7,7 +7,19 @@
 - Base - MERN Stack
 - Mention others with names
 
+# AI Chatbot
 
+
+* AI chatbot to assist parents/students with queries like:
+
+
+* School search help
+* Loan guidance
+* Scholarship information
+* Application status
+
+
+* Chatbot integrated via Google Cloud Dialogflow or a custom NLP backend.
 
 
 
@@ -69,6 +81,7 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 ## Social Media
+
 
 
 
