@@ -7,9 +7,10 @@
 - Base - MERN Stack
 - Mention others with names
 
-## Page structure
-login- as user or admin
-## user -
+##  Pages structure
+- login- as user or admin
+  
+### User -
 - Home page
 - schools
 - schools comparison page
@@ -19,21 +20,17 @@ login- as user or admin
 - user dashboard with all his loans,scholarships,donations,..
 - ai chatbot
 
-## admin -
+### Admin -
 - admin dashboard of loans for approval,scholarships update,adding donations
 
-## AI Chatbot
+### AI Chatbot
 
 
 * AI chatbot to assist parents/students with queries like:
-
-
 * School search help
 * Loan guidance
 * Scholarship information
 * Application status
-
-
 * Chatbot integrated via Google Cloud Dialogflow or a custom NLP backend.
 
 
@@ -153,6 +150,7 @@ Medium: 11px
 * Verify and approve **new school registrations**.
 * Oversee and manage **user accounts** and **admin permissions**.
 * Generate **reports and analytics** for platform insights.
+
 
 
 
