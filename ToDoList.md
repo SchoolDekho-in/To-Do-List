@@ -103,6 +103,12 @@ Medium: 11px
 
 ## 🔍 Features
 
+  *Real-time chatbot analytics.
+  * Push notifications.
+  * Integration with UPI payments for donations.
+  * AI-based school recommendation system.
+
+
 * **Filters** — Users can filter schools/colleges by:
   * Location
   * Board (CBSE, ICSE, IB, etc.)
@@ -119,6 +125,10 @@ Medium: 11px
   * Displays nearest schools or colleges based on radius (e.g., within 5km).
   * Allows manual pin-drop or city selection for more accurate search.
   * Access the location of the school or college. 
+
+
+
+
 
 
 
