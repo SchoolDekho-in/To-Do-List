@@ -6,6 +6,12 @@
 
 - Base - MERN Stack
 - Mention others with names
+- Animations - Three.js , Tailwind css
+- frountend(main)- Reactjs
+- frountend(admin) - angular17
+- Backend - Node.js+Express.js
+- Database - superbase postgres hybrid
+- NLP Engine - CHATGPT
 
 ##  Pages structure
 - login- as user or admin
@@ -150,6 +156,7 @@ Medium: 11px
 * Verify and approve **new school registrations**.
 * Oversee and manage **user accounts** and **admin permissions**.
 * Generate **reports and analytics** for platform insights.
+
 
 
 
