@@ -10,17 +10,17 @@
 ## Page structure
 login- as user or admin
 ## user -
-Home page
-schools
-schools comparison page
-fundrising
-scholarships available
-loans application
-user dashboard with all his loans,scholarships,donations,..
-ai chatbot
+- Home page
+- schools
+- schools comparison page
+- fundrising
+- scholarships available
+- loans application
+- user dashboard with all his loans,scholarships,donations,..
+- ai chatbot
 
 ## admin -
-admin dashboard of loans for approval,scholarships update,adding donations
+- admin dashboard of loans for approval,scholarships update,adding donations
 
 ## AI Chatbot
 
@@ -96,6 +96,7 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 ## Social Media
+
 
 
 
