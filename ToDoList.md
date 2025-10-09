@@ -101,6 +101,24 @@ Medium: 11px
 
 
 
+## 🔍 Features
+
+* **Filters** — Users can filter schools/colleges by:
+  * Location
+  * Board (CBSE, ICSE, IB, etc.)
+  * Type (Day School, Boarding, Play School)
+  * Fee Range and Ratings
+
+* **Search Bar** —
+  * Instant search for schools or colleges by name.
+  * Supports partial and fuzzy search for better UX.
+  * Integrated with backend APIs for real-time suggestions.
+
+* **Location Access** —
+  * Automatically detects user’s current location (via browser geolocation API).
+  * Displays nearest schools or colleges based on radius (e.g., within 5km).
+  * Allows manual pin-drop or city selection for more accurate search.
+  * Access the location of the school or college. 
 
 
 
