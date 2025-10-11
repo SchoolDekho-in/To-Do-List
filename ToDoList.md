@@ -16,6 +16,7 @@
     -   **Animations:** Framer Motion
     -   **State Management:** React Context API, Zustand, or Redux Toolkit (if global state is complex)
     -   **Data Fetching:** React Query (TanStack Query) or SWR
+    -   **UI Components:** Headless UI (for unstyled, accessible components) or custom components built with Tailwind.
 -   **Backend:** **Node.js** with **Express.js**
     -   **Authentication:** JWT (JSON Web Tokens)
 -   **Database:** **Supabase** (utilizing its managed **PostgreSQL** database)
@@ -51,12 +52,43 @@
     -   Profile settings.
 -   **AI Chatbot:** Accessible globally via a floating action button.
 
-### Admin Flow (School & Super Admin):
--   **Admin Dashboard:** Central hub displaying key metrics (applications, inquiries, profile views).
--   **Loan Management:** View, approve, or reject loan applications.
--   **Scholarship Management:** Add, update, or remove scholarship listings.
--   **Donation Oversight:** Track incoming donations and manage campaigns.
--   **(Super Admin Only):** Manage school listings, verify new school accounts, and manage user roles.
+### School Admin Portal Flow (Angular Frontend):
+-   **School Registration/Onboarding Page:** A multi-step form for schools to register. Gathers basic info and requires document uploads for verification by the Super Admin.
+-   **School Admin Dashboard:** Central hub displaying key metrics:
+    -   Profile completion status/score.
+    -   Profile views and engagement statistics.
+    -   Number of new inquiries received.
+    -   Recent parent reviews.
+-   **Profile Management Section:** A comprehensive interface for admins to build and update their school's public profile, including:
+    -   **Basic Information:** School name, address, contact details, board affiliation.
+    -   **Academics:** Curriculum details, subjects offered, grade levels.
+    -   **Infrastructure & Facilities:** Upload photos and descriptions of the campus, labs, library, sports facilities, etc.
+    -   **Admissions:** Detailed admission process, key dates, and a dynamic fee structure table.
+    -   **Gallery Management:** A dedicated section to upload and manage high-resolution photos and videos.
+    -   **News & Events:** A publisher to post announcements and school events.
+-   **Inquiry Management:** A built-in messaging system to view and respond to inquiries from parents and students.
+
+### Super Admin Portal Flow:
+-   **Super Admin Dashboard:** Overview of platform health, key statistics, and pending actions.
+    -   Total registered users, active schools, pending school verifications.
+    -   Recent financial activities (donations, loan disbursements).
+-   **School Verification & Management:**
+    -   List of all registered schools, with status (Pending, Approved, Rejected, Blocked).
+    -   Detailed view for each school: review submitted registration documents, approve/reject registration.
+    -   Ability to edit any school's public profile.
+    -   Ability to suspend or delete school accounts.
+-   **User Management:**
+    -   List of all parent/student users.
+    -   Ability to view user profiles, manage account status (block/unblock), and reset passwords.
+-   **Content Moderation:**
+    -   Review user-submitted reviews and ratings for schools.
+    -   Moderate any objectionable content (e.g., news/events posted by schools).
+-   **Financial Oversight:**
+    -   Manage loan and scholarship programs: add new schemes, set eligibility criteria.
+    -   Approve or reject loan applications (after initial automated checks).
+    -   Track all donations and financial transactions.
+-   **Platform Settings:** Manage global settings, API keys, notification templates.
+-   **Analytics & Reporting:** Generate custom reports on platform usage, school performance, user engagement, etc.
 
 ---
 
@@ -165,3 +197,4 @@
 -   **Cloudinary API:** For uploading, storing, and delivering all images and video assets.
 -   **Payment Gateway API (e.g., Razorpay, Stripe):** To handle all UPI and card transactions securely.
 -   **Email/SMS Gateway API (e.g., SendGrid, Twilio):** To send transactional emails (verification, notifications) and SMS alerts.
+
