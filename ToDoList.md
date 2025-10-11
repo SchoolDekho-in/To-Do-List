@@ -1,181 +1,167 @@
-# Add your inputs with name and Also add other things which I left
+# Project Requirements: SchoolDekho.in
 
-# To-Do List
+## 1. 🚀 Project Overview
 
-## Tech Stuff:-
+**SchoolDekho.in** is a comprehensive educational platform designed to connect parents and students with schools, colleges, and financial aid opportunities. The platform will feature a powerful search engine, comparison tools, scholarship/loan applications, and an AI-powered chatbot to provide a seamless user experience. The frontend will be built with **Next.js** for optimal performance and SEO, styled efficiently with **Tailwind CSS**.
 
-- Base - MERN Stack
-- Mention others with names
-- Animations - Three.js , Tailwind css
-- frountend(main)- Reactjs
-- frountend(admin) - angular17
-- Backend - Node.js+Express.js
-- Database - superbase postgres hybrid
-- NLP Engine - CHATGPT
-- Cloud - cloudinary API  for storing the images and location coordinates of the schools or college
-- google geolocation API
+---
 
-##  Pages structure
-- login- as user or admin
-  
-### User -
-- Home page
-- schools
-- schools comparison page
-- fundrising
-- scholarships available
-- loans application
-- user dashboard with all his loans,scholarships,donations,..
-- ai chatbot
+## 2. 💻 Tech Stack 
 
-### Admin -
-- admin dashboard of loans for approval,scholarships update,adding donations
+### Core Technologies:
 
-### AI Chatbot
+-   **Base Framework:** **Next.js** (Frontend) + **Node.js/Express.js** (Backend)
+-   **Frontend :** **Next.js** (v14+)
+    -   **Styling:** **Tailwind CSS**
+    -   **Animations:** Framer Motion
+    -   **State Management:** React Context API, Zustand, or Redux Toolkit (if global state is complex)
+    -   **Data Fetching:** React Query (TanStack Query) or SWR
+-   **Backend:** **Node.js** with **Express.js**
+    -   **Authentication:** JWT (JSON Web Tokens)
+-   **Database:** **Supabase** (utilizing its managed **PostgreSQL** database)
+    -   **GIS Functionality:** PostGIS extension for efficient location-based queries.
+-   **AI & NLP Engine:** **OpenAI API (GPT-4)** for the chatbot's reasoning and response generation.
+    -   **Chatbot Framework:** Custom implementation using Node.js backend.
+-   **Cloud & Media:**
+    -   **Image/Video Storage:** **Cloudinary API** for hosting all school-related media.
+    -   **Deployment (Next.js):** Vercel (recommended for Next.js)
+    -   **Deployment (Backend):** AWS EC2 / Heroku / DigitalOcean
+-   **Testing:**
+    -   **Unit/Integration:** Jest, React Testing Library
+    -   **End-to-End:** Cypress
 
+---
 
-* AI chatbot to assist parents/students with queries like:
-* School search help
-* Loan guidance
-* Scholarship information
-* Application status
-* Chatbot integrated via Google Cloud Dialogflow or a custom NLP backend.
+## 3. 📄 Page & Application Structure
 
+### Common Pages:
+-   **Login/Signup Page:** With options to register/login as a 'User' or 'School Admin'.
 
+### User Flow:
+-   **Homepage:** Hero section with a prominent search bar, featured schools, testimonials, and clear calls-to-action.
+-   **School Search & Listing Page:** Displays search results with advanced filters.
+-   **School Comparison Page:** Side-by-side comparison of up to 3-4 selected schools based on key metrics.
+-   **Fundraising Page:** Browse active fundraising campaigns or start a new one.
+-   **Scholarships Page:** List of available scholarships with filter options.
+-   **Loans Application Page:** A step-by-step form to apply for educational loans.
+-   **User Dashboard:** A personalized space showing:
+    -   Status of submitted applications (loans, scholarships).
+    -   Saved schools list.
+    -   Donations made.
+    -   Profile settings.
+-   **AI Chatbot:** Accessible globally via a floating action button.
 
+### Admin Flow (School & Super Admin):
+-   **Admin Dashboard:** Central hub displaying key metrics (applications, inquiries, profile views).
+-   **Loan Management:** View, approve, or reject loan applications.
+-   **Scholarship Management:** Add, update, or remove scholarship listings.
+-   **Donation Oversight:** Track incoming donations and manage campaigns.
+-   **(Super Admin Only):** Manage school listings, verify new school accounts, and manage user roles.
 
+---
 
-
-
-
- 
-## Colors and Themes
+## 4. 🎨 Design System (Tailwind CSS Integration)
 
 ### 01 TYPOGRAPHY SYSTEM
-
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Font weights
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
-
-- Line heights
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-
-- Letter spacing
--0.5px
-0.75px
+-   **Font Family:** 'Inter' or 'Poppins' (sans-serif) - *Configured in `tailwind.config.js`*
+-   **Font Sizes (px):**
+    -   `text-xs` (10px) / `text-sm` (12px) / `text-base` (14px) / `text-lg` (16px) / `text-xl` (18px) / `text-2xl` (20px) / `text-3xl` (24px) / `text-4xl` (30px) / `text-5xl` (36px) / `text-6xl` (44px) / `text-7xl` (52px) / `text-8xl` (62px) / `text-9xl` (74px) - *Custom font sizes may be extended in `tailwind.config.js` for larger values.*
+-   **Font Weights:** `font-normal` (400), `font-medium` (500), `font-semibold` (600), `font-bold` (700)
+-   **Line Heights:** `leading-tight` (1.05), `leading-normal` (1.2), `leading-relaxed` (1.6) - *Default line height for text is often `leading-none` (1) or `leading-tight` in Tailwind.*
+-   **Letter Spacing:** `tracking-tighter` (-0.5px), `tracking-wide` (0.75px) - *Custom values can be added to `tailwind.config.js`.*
 
 ### 02 COLORS
-
-- Primary:
-
-- Tints:
-
-
-- Shades: 
-
-
-- Accents:
-
-- Greys
-
+-   **Primary:** `school-blue` (`#0057FF`)
+-   **Tints:** `school-blue-100` (`#E6F0FF`), `school-blue-300` (`#B3D1FF`)
+-   **Shades:** `school-blue-700` (`#0043CC`), `school-blue-900` (`#002A80`)
+-   **Accents:** `school-yellow` (`#FFC700`), `school-green` (`#28A745`)
+-   **Greys:**
+    -   `gray-50` (`#F8F9FA`)
+    -   `gray-200` (`#E9ECEF`)
+    -   `gray-600` (`#6C757D`)
+    -   `gray-900` (`#212529`)
+-   *These custom colors will be defined in `tailwind.config.js`.*
 
 ### 03 SHADOWS
-
+-   **Card Shadow:** `shadow-md` (Tailwind default or custom `shadow-school-card`)
+-   **Hover Shadow:** `shadow-lg` (Tailwind default or custom `shadow-school-hover`)
+-   *Custom shadows can be extended in `tailwind.config.js`.*
 
 ### 04 BORDER-RADIUS
-
-Default: 9px
-Medium: 11px
+-   **Default:** `rounded-lg` (8px-12px range, can be customized)
+-   **Medium:** `rounded-xl` (12px-16px range, can be customized)
+-   *Custom `borderRadius` values can be added to `tailwind.config.js`.*
 
 ### 05 WHITESPACE
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-## Social Media
-
-
-
-
-
-## 🔍 Features
-
-  *Real-time chatbot analytics.
-  * Push notifications.
-  * Integration with UPI payments for donations.
-  * AI-based school recommendation system.
-
-
-* **Filters** — Users can filter schools/colleges by:
-  * Location
-  * Board (CBSE, ICSE, IB, etc.)
-  * Type (Day School, Boarding, Play School)
-  * Fee Range and Ratings
-
-* **Search Bar** —
-  * Instant search for schools or colleges by name.
-  * Supports partial and fuzzy search for better UX.
-  * Integrated with backend APIs for real-time suggestions.
-
-* **Location Access** —
-  * Automatically detects user’s current location (via browser geolocation API).
-  * Displays nearest schools or colleges based on radius (e.g., within 5km).
-  * Allows manual pin-drop or city selection for more accurate search.
-  * Access the location of the school or college. 
-
-
-## 👥 User Roles & Access
-
-### 1. Parent/Student Users
-* Search and compare schools or colleges.
-* Apply for **loans** and **scholarships**.
-* Interact with the **AI chatbot** for personalized guidance.
-* Join or create **fundraising groups** to support education costs.
+-   **Spacing System (px):** `space-x/y-0.5` (2px) / `space-x/y-1` (4px) / `space-x/y-2` (8px) ... up to `space-x/y-32` (128px) - *Tailwind's default spacing scale covers most of these, custom values can be added.*
 
 ---
 
-### 2. School Admins
-* Manage and update **school profiles**, including:
-  * Academic details
-  * Infrastructure
-  * Policies
-  * Events and galleries
-* Handle **enquiries** from parents and students.
-* Manage **alumni network** and connect with former students.
+## 5. 🌐 Social Media Strategy
+
+-   **Platforms:** Facebook, Instagram, LinkedIn.
+-   **Goals:** Build brand awareness, drive website traffic, and engage with the parent/student community.
+-   **Content Pillars:**
+    1.  **Informative Tips:** Posts on "How to choose a school," "Understanding different curricula," etc.
+    2.  **School Spotlights:** Feature partner schools and their unique offerings.
+    3.  **Community Engagement:** Run polls, Q&As, and share user-generated content.
+    4.  **Platform Updates:** Announce new features, scholarships, or loan partners.
 
 ---
+
+## 6. 🔍 Core Features
+
+-   **AI Chatbot:**
+    -   **Purpose:** Assist users with school searches, loan guidance, scholarship info, and application status.
+    -   **Technology:** Integrated via a custom NLP backend using the **OpenAI API**.
+    -   **Features:** Real-time analytics on user queries to improve responses.
+-   **Advanced Search & Filters:**
+    -   **Filters:** Location, Board (CBSE, ICSE), Type (Day School, Boarding), Fee Range, Ratings.
+    -   **Search Bar:** Instant, real-time search with fuzzy matching and autocomplete.
+-   **Geolocation:**
+    -   **Auto-Detection:** Uses browser geolocation to suggest nearby schools.
+    -   **Manual Search:** Allows users to search by city or pin on a map.
+-   **Finance & Aid:**
+    -   **Payments:** Secure **UPI integration** for donations and application fees.
+    -   **AI Recommendations:** AI-based system to recommend suitable scholarships and loans based on user profiles.
+-   **Notifications:**
+    -   **Push Notifications:** For application status updates and important reminders.
+    -   **Email/SMS Notifications:** For account verification and critical alerts.
+
+---
+
+## 7. 👥 User Roles & Access
+
+### 1. Parent/Student User
+-   **Access:** Search/compare schools, apply for loans/scholarships, join fundraisers, interact with the AI chatbot.
+-   **Goal:** To find the perfect educational institution and financial support.
+
+### 2. School Admin
+-   **Access:** Manage their school's profile (academics, infrastructure, events), handle inquiries, and manage the alumni network.
+-   **Goal:** To showcase their institution and attract prospective students.
 
 ### 3. Super Admin (SchoolDekho Team)
-* Manage **overall platform listings** and ensure data accuracy.
-* Verify and approve **new school registrations**.
-* Oversee and manage **user accounts** and **admin permissions**.
-* Generate **reports and analytics** for platform insights.
+-   **Access:** Full control over the platform. Manage school listings, verify new accounts, oversee user roles, and generate platform-wide analytics.
+-   **Goal:** To ensure data integrity, platform growth, and smooth operation.
 
+---
 
+## 8. 🔌 Required APIs
 
+### Internal APIs (Built by our Backend Team)
+-   `/api/auth/`: User/Admin registration, login, and password management.
+-   `/api/schools/`: CRUD operations for school listings, search, and filtering.
+-   `/api/users/`: Manage user profiles and dashboards.
+-   `/api/applications/`: Handle loan and scholarship application submissions.
+-   `/api/payments/`: Process donations and fees.
+-   `/api/chatbot/`: Handle communication between the frontend and the AI engine.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### External (Third-Party) APIs
+-   **Google Maps Platform:**
+    -   **Geolocation API:** To determine a user's current location.
+    -   **Places API:** For school address autocomplete and details.
+    -   **Maps JavaScript API:** To display interactive maps.
+-   **OpenAI API:** To power the NLP and conversational abilities of the chatbot.
+-   **Cloudinary API:** For uploading, storing, and delivering all images and video assets.
+-   **Payment Gateway API (e.g., Razorpay, Stripe):** To handle all UPI and card transactions securely.
+-   **Email/SMS Gateway API (e.g., SendGrid, Twilio):** To send transactional emails (verification, notifications) and SMS alerts.
