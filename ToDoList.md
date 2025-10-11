@@ -52,7 +52,7 @@
     -   Profile settings.
 -   **AI Chatbot:** Accessible globally via a floating action button.
 
-### School Admin Portal Flow (Angular Frontend):
+### School Admin Portal Flow :
 -   **School Registration/Onboarding Page:** A multi-step form for schools to register. Gathers basic info and requires document uploads for verification by the Super Admin.
 -   **School Admin Dashboard:** Central hub displaying key metrics:
     -   Profile completion status/score.
@@ -197,4 +197,5 @@
 -   **Cloudinary API:** For uploading, storing, and delivering all images and video assets.
 -   **Payment Gateway API (e.g., Razorpay, Stripe):** To handle all UPI and card transactions securely.
 -   **Email/SMS Gateway API (e.g., SendGrid, Twilio):** To send transactional emails (verification, notifications) and SMS alerts.
+
 
