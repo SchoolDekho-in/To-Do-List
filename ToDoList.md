@@ -103,10 +103,10 @@
 -   **Letter Spacing:** `tracking-tighter` (-0.5px), `tracking-wide` (0.75px) - *Custom values can be added to `tailwind.config.js`.*
 
 ### 02 COLORS
--   **Primary:** `school-blue` (`#0057FF`)
--   **Tints:** `school-blue-100` (`#E6F0FF`), `school-blue-300` (`#B3D1FF`)
--   **Shades:** `school-blue-700` (`#0043CC`), `school-blue-900` (`#002A80`)
--   **Accents:** `school-yellow` (`#FFC700`), `school-green` (`#28A745`)
+-   **Primary:** `deep-indigo` (`#1E3A8A`)
+-   **Tints:** `fresh-green` (`#22C55E`),
+-   **Accents:** `amber` (`#F59E0B`),
+-   **Neutral:** `snow-white` (`#F9FAFB`), `dark-slate` (`#111827`)
 -   **Greys:**
     -   `gray-50` (`#F8F9FA`)
     -   `gray-200` (`#E9ECEF`)
@@ -197,5 +197,6 @@
 -   **Cloudinary API:** For uploading, storing, and delivering all images and video assets.
 -   **Payment Gateway API (e.g., Razorpay, Stripe):** To handle all UPI and card transactions securely.
 -   **Email/SMS Gateway API (e.g., SendGrid, Twilio):** To send transactional emails (verification, notifications) and SMS alerts.
+
 
 
